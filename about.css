@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --max-width: 1280px;
+  --main-color: #ffbc00;
+  --light-color: #f4f4f4;
+  --medium-color: #ccc;
+  --dark-color: #333;
+}
+
+body {
+  font-family: "Dosis", serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+#header-home {
+  background: url("./img/showcase.jpg") no-repeat 20% 30% / cover;
+  height: 4.3rem;
+  border-bottom: 3px solid #ffbc00;
+}
+#logo {
+  width: 60px;
+  padding-left: 200px;
+  padding-top: 5px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 283px;
+  padding-top: 16px;
+  font-weight: 400;
+}
+
+.current {
+  border-bottom: #ffbc00 3px solid;
+  text-decoration-color: #ffbc00;
+  padding: 8px;
+}
+
+.about {
+  color: var(--light-color);
+}
+
+.main-nav ul li {
+  padding-right: 50px;
+  list-style: none;
+  font-weight: 600;
+}
+
+a:hover {
+  border-bottom: #fff 3px solid;
+
+  padding: 8px;
+}
+
+
+.content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.lead {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bottom-line-three {
+  background-color: var(--main-color);
+  width: 40px;
+  height: 2px;
+  margin-left: 146px;
+  margin-bottom: 10px;
+}
+.about-my {
+  display: flex;
+      justify-content: center;
+        align-items: center;
+  
+  margin-bottom: 50px;
+}
+.about-my .bio-image {
+  width: 350px;
+  padding-right: 20px;
+}
+.about-my h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.about-my .bio {
+  width: 610px;
+  padding: 20px;
+  background-color: #fbf7f7;
+  border-left: #ffbc00 3px solid;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.icons div {
+  width: 310px;
+  text-align: center;
+  padding-right: 30px;
+}
+.icons h3 {
+  text-transform: uppercase;
+}
+.icons i {
+  color: var(--main-color);
+  padding-bottom: 15px;
+}
+.icons p {
+  font-size: 13px;
+}
+#about-b {
+  background-color: var(--dark-color);
+}
+#about-b .container {
+  padding-bottom: 20px;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.content-two {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content-two h2 {
+  color: var(--light-color);
+  margin-top: 30px;
+}
+.bottom-line-four {
+  background-color: var(--main-color);
+  width: 40px;
+  height: 2px;
+  margin-left: 91px;
+  margin-bottom: 5px;
+}
+.progress-list {
+  
+  margin-bottom: 30px;
+}
+.progress {
+  margin-bottom: 10px;
+  width: 1000px;
+  height: 20px;
+  background-color: #fbf7f7;
+  border-radius: 7px;
+}
+.progress .let-one {
+  width: 100%;
+  background-color: var(--main-color);
+  height: 20px;
+  border-radius: 7px;
+}
+.progress .let {
+  background-color: var(--main-color);
+  height: 20px;
+  border-radius: 7px;
+}
+.progress-list h4 {
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+#about-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf7f7;
+}
+
+.about-logos img {
+  padding: 50px;
+}
+.content-three {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.testimonials div {
+  width: 200px;
+  padding-right: 10px;
+}
+.testimonials p {
+  font-size: 10px;
+  padding: 20px;
+  border: #cdc9c9 solid 1px;
+  border-radius: 5px;
+}
+.testimonials img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.testimonials ul {
+  font-size: 10px;
+  display: flex;
+  margin-right: 9px;
+  padding-top: 16px;
+  font-weight: 500;
+  list-style: none;
+  text-align: center;
+}
+.testimonials .top {
+  position: relative;
+  top: 10px;
+}
+
+.footer-content {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.footer-content .social .fab {
+  margin-left: 15px;
+  padding: 7px;
+  border-radius: 50px;
+  border: #fff 2px solid;
+}
+
+.footer-content .fab:hover {
+  background: #ffbc00;
+}
+@media (max-width: 1024px) {
+  nav ul {
+    margin-right: 0;
+  }
+  .content {
+    margin-left: 81px;
+    margin-top: 30px;
+  }
+
+  .about-my {
+    padding-left: 53px;
+  }
+  .icons {
+    margin-left: 47px;
+  }
+  .progress-list {
+    
+  }
+  .progress {
+    width: 850px;
+  }
+  .about-logos img {
+    padding: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .progress {
+    width: 593px;
+  }
+  .about-logos {
+    margin-left: 142px;
+  }
+  .testimonials {
+    width: 700px;
+    margin-left: 42px;
+  }
+}
+
+@media (max-width: 500px) {
+ 
+
+  #header-home {
+  width: 100%;
+    height: 130px;
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  nav {
+    display: grid;
+  }
+
+  #logo {
+    padding-left: 154px;
+    width: 76px;
+    margin-left: 0px;
+  }
+
+  
+
+     nav ul {
+       padding-top: 5px;
+          margin-left: 16px;
+     }
+  
+     ul .cut {
+       padding-right: 0 !important;
+     }
+  .about-my {
+    display: grid;
+    padding-left: 0px;
+  }
+  .about-my .bio {
+    width: 309px;
+    border-left: #ffbc00 4px solid;
+  }
+  .icons {
+    margin-left: 8px;
+    display: grid;
+  }
+  .progress {
+    width: 278px;
+  }
+  
+  .about-logos{
+        margin-left: 70px;
+
+}
+.testimonials{
+  width: 100%;
+        margin-left: 0px;
+        display: grid;
+}
+.testimonials div {
+    width: 272px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+}
+.testimonials p {
+    font-size: 14px;
+}
+.testimonials .top {
+    font-size: 12px;
+}
+.footer-content {
+    width: 100%;
+    display: grid;
+}
+
+.social {
+    padding-top: 20px;
+}
+
+.content{
+    margin-left: 0px;
+}
+ .about-my .bio-image {
+   padding-right: 0;
+ }
+.about-my{
+                
+                    justify-content: center;
+}
+            .icons{
+                margin-left: 39px;
+            }
+           
+          }

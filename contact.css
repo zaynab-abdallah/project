@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --max-width: 1280px;
+  --main-color: #ffbc00;
+  --light-color: #f4f4f4;
+  --medium-color: #ccc;
+  --dark-color: #333;
+}
+
+body {
+  font-family: "Dosis", serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+#header-home {
+  background: url("./img/showcase.jpg") no-repeat 20% 30% / cover;
+  height: 4.3rem;
+  border-bottom: 3px solid #ffbc00;
+}
+
+#logo {
+  width: 60px;
+  padding-left: 200px;
+  padding-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 350px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 283px;
+  padding-top: 16px;
+  font-weight: 400;
+}
+
+.current {
+  border-bottom: #ffbc00 3px solid;
+  text-decoration-color: #ffbc00;
+  padding: 8px;
+}
+
+.about {
+  color: var(--light-color);
+}
+
+.main-nav ul li {
+  padding-right: 50px;
+  list-style: none;
+  font-weight: 600;
+}
+
+a:hover {
+  border-bottom: #fff 3px solid;
+
+  padding: 8px;
+}
+
+.content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bottom-line-five {
+  background-color: var(--main-color);
+  width: 40px;
+  height: 2px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+  align-items: center;
+  width: 1079px;
+  
+}
+#contact-a .container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#contact-a .text-fields .name-input {
+  grid-area: name;
+}
+
+#contact-a .text-fields .subject-input {
+  grid-area: subject;
+}
+
+#contact-a .text-fields .email-input {
+  grid-area: email;
+}
+
+#contact-a .text-fields .phone-input {
+  grid-area: phone;
+}
+
+#contact-a .text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+#contact-a .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+#contact-a button[type="submit"] {
+  width: 35%;
+  padding: 5px;
+ 
+  background-color: #333;
+  color: var(--light-color);
+  margin-bottom: 50px;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 50px;
+}
+
+#contact-c h1 {
+  text-align: center;
+  font-size: 4rem;
+  background-color: var(--main-color);
+  color: var(--light-color);
+  padding: 50px;
+}
+
+.footer-content {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.footer-content .social .fab {
+  margin-left: 15px;
+  padding: 7px;
+  border-radius: 50px;
+  border: #fff 2px solid;
+}
+
+.footer-content .fab:hover {
+  background: #ffbc00;
+}
+@media (max-width: 1024px) {
+  nav ul {
+    margin-right: 0;
+  }
+
+  #contact-a .text-fields {
+    width: 883px;
+    margin-left: 69px;
+  }
+  #contact-a button[type="submit"] {
+    left: 335px;
+  }
+}
+@media (max-width: 800px) {
+  #contact-a .text-fields {
+    width: 696px;
+    margin-left: 35px;
+  }
+  #contact-a button[type="submit"] {
+    left: 241px;
+  }
+}
+@media (max-width: 500px) {
+  #header-home {
+    width: 100%;
+    height: 130px;
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  nav {
+    display: grid;
+  }
+
+  #logo {
+    padding-left: 154px;
+    width: 76px;
+    margin-left: 0px;
+  }
+
+ nav ul {
+   padding-top: 5px;
+        margin-left: 16px;
+ }
+
+ ul .cut {
+  padding-right: 0 !important;
+ }
+  #contact-a .text-fields {
+    width: 230px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-a button[type="submit"] {
+    left: 120px;
+  }
+  
+  #contact-a .text-fields .text-input {
+    padding-right: 130px;
+    border: none;
+  }
+  #contact-b .contact-info div {
+        margin-bottom: 50px;
+  }
+  #contact-b .contact-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-content {
+      width: 100%;
+      display: grid;
+  }
+
+  .social {
+      padding-top: 20px;
+  }
+}
