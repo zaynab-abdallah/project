@@ -243,12 +243,14 @@ a:hover {
 nav {
   display: grid;
 }
+.main-nav ul li {
+  padding-right: 37px;
 
-
+  }
 
  nav ul {
    padding-top: 5px;
-        margin-left: 16px;
+     margin-left: 37px;
  }
 
  ul .cut {
