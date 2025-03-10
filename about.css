@@ -315,12 +315,15 @@ a:hover {
     margin-left: 0px;
   }
 
-  
+  .main-nav ul li {
+  padding-right: 37px;
 
-     nav ul {
-       padding-top: 5px;
-          margin-left: 16px;
-     }
+  }
+
+ nav ul {
+   padding-top: 5px;
+     margin-left: 37px;
+ }
   
      ul .cut {
        padding-right: 0 !important;
